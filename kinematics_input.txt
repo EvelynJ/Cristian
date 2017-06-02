@@ -26,17 +26,10 @@ C07)   80          # [float]   kinematic Position Angle of galaxy (from NED) (PA
 C08)   2.6          # [float]   spectral resolution in AA (FWHM_gal)
 
 
-# Set wavelength range for decomposition
-D02)   4820         # [float]   start wavelength for decomposition (start_wavelength)
-D03)   7200         # [float]   end wavelength for decomposition (end_wavelength)
-D04)   10           # [float]   number of bins in wavelength direction to get GalfitM fit polynomials (no_bins)
-D05)   10           # [float]   number of image slices to include in each set of fits (no_slices)
-
-
 
 # Determine which parts of the code to run
-E00)  n            # ['y'/'n'] log_rebin_data
-E01)  n            # ['y'/'n'] voronoi_bin_data
-E02)  y            # ['y'/'n'] measure_kinematics
-E03)  y            # ['y'/'n'] plot_kinematics
+D00)  n            # ['y'/'n'] log_rebin_data
+D01)  n            # ['y'/'n'] voronoi_bin_data
+D02)  y            # ['y'/'n'] measure_kinematics
+D03)  y            # ['y'/'n'] plot_kinematics
 

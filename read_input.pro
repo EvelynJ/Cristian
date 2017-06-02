@@ -41,10 +41,10 @@ PRO read_input, setup_file, setup
                         'Redshift', 0., $
                         'PA', 0., $
                         'FWHM_gal',0.,$
-                        'start_wavelength', 0., $
-                        'end_wavelength', 0., $
-                        'no_bins', 0., $
-                        'no_slices', 0., $
+;                        'start_wavelength', 0., $
+;                        'end_wavelength', 0., $
+;                        'no_bins', 0., $
+;                        'no_slices', 0., $
                         'log_rebin_data', '', $
                         'bin_data', '', $
                         'measure_kinematics', '', $
@@ -108,15 +108,15 @@ PRO read_input, setup_file, setup
         'C07)': setup.PA = float(content)
         'C08)': setup.FWHM_gal = float(content)
 
-        'D02)': setup.start_wavelength = float(content)
-        'D03)': setup.end_wavelength = float(content)
-        'D04)': setup.no_bins = float(content)
-        'D05)': setup.no_slices = float(content)
+;        'D02)': setup.start_wavelength = float(content)
+;        'D03)': setup.end_wavelength = float(content)
+;        'D04)': setup.no_bins = float(content)
+;        'D05)': setup.no_slices = float(content)
         
-        'E00)': setup.log_rebin_data = content
-        'E01)': setup.bin_data = content
-        'E02)': setup.measure_kinematics = content
-        'E03)': setup.plot_kinematics = content
+        'D00)': setup.log_rebin_data = content
+        'D01)': setup.bin_data = content
+        'D02)': setup.measure_kinematics = content
+        'D03)': setup.plot_kinematics = content
         
      ENDCASE
   ENDWHILE
