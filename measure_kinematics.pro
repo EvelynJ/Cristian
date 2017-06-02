@@ -477,7 +477,7 @@ if setup.measure_kinematics eq 'y' then begin
     
     ;;;;Original verison of code, no gas measurements
     
-    ppxf_v479, stars_templates, galaxy, noise, velScale, start, sol,$
+    ppxf, stars_templates, galaxy, noise, velScale, start, sol,$
       GOODPIXELS=goodPixels, MOMENTS=2, DEGREE=4, $
       VSYST=dv, ERROR=error, BIAS=Bias, BESTFIT=bestfit
       
