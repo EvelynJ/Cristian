@@ -11,7 +11,7 @@ A00)   /home/ejohnsto/Cristian/          # [string] main data directory (root)
 A01)   NGC1407                # [string] galaxy reference (galaxy_ref)
 A02)   DATACUBE_FINAL        # [string] input datacube, without .fits (file)
 A03)   kinematics/                     # [string] kinematics directory (kinematics)
-A04)   /home/ejohnsto/GitHub/BUDDI/miles_models/ # [string] directory for stellar library (stellib_dir)
+A04)   /home/ejohnsto/GitHub/Cristian/miles_models/ # [string] directory for stellar library (stellib_dir)
 
 
 # Provide basic information for the datacube
