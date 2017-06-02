@@ -1,0 +1,42 @@
+########################################################################
+#     INPUT FILE FOR MEASURE_KINEMATICS.PRO
+#     
+#     comments and questions should be sent to Evelyn Johnston
+#     (ejohnsto@eso.org)
+########################################################################
+
+
+# Set up directory structure for all output files
+A00)   /home/ejohnsto/Cristian/          # [string] main data directory (root)
+A01)   NGC1407                # [string] galaxy reference (galaxy_ref)
+A02)   DATACUBE_FINAL        # [string] input datacube, without .fits (file)
+A03)   kinematics/                     # [string] kinematics directory (kinematics)
+A04)   /home/ejohnsto/GitHub/BUDDI/miles_models/ # [string] directory for stellar library (stellib_dir)
+
+
+# Provide basic information for the datacube
+C00)   220           # [integer] x position of centre of galaxy (x_centre)
+C01)   203           # [integer] y position of centre of galaxy (y_centre)
+C02)   6500         # [float]   central wavelength of continuum band for measuring S/N (cont_wavelength)
+C03)   50           # [float]   wavelength range for measuring S/N in continuum (cont_range)
+C04)   300           # [float]   target S/N value for binning (targetSN)
+C05)   5           # [float]   S/N lower limit (limit)
+C06)   0.005934     # [float]   Redshift from NED (Redshift)
+C07)   80          # [float]   kinematic Position Angle of galaxy (from NED) (PA)
+C08)   2.6          # [float]   spectral resolution in AA (FWHM_gal)
+
+
+# Set wavelength range for decomposition
+D02)   4820         # [float]   start wavelength for decomposition (start_wavelength)
+D03)   7200         # [float]   end wavelength for decomposition (end_wavelength)
+D04)   10           # [float]   number of bins in wavelength direction to get GalfitM fit polynomials (no_bins)
+D05)   10           # [float]   number of image slices to include in each set of fits (no_slices)
+
+
+
+# Determine which parts of the code to run
+E00)  n            # ['y'/'n'] log_rebin_data
+E01)  n            # ['y'/'n'] voronoi_bin_data
+E02)  y            # ['y'/'n'] measure_kinematics
+E03)  y            # ['y'/'n'] plot_kinematics
+
