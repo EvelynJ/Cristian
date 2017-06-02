@@ -28,8 +28,8 @@ C08)   2.6          # [float]   spectral resolution in AA (FWHM_gal)
 
 
 # Determine which parts of the code to run
-D00)  n            # ['y'/'n'] log_rebin_data
-D01)  n            # ['y'/'n'] voronoi_bin_data
+D00)  y            # ['y'/'n'] log_rebin_data
+D01)  y            # ['y'/'n'] voronoi_bin_data
 D02)  y            # ['y'/'n'] measure_kinematics
 D03)  y            # ['y'/'n'] plot_kinematics
 
