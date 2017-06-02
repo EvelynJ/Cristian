@@ -16,3 +16,10 @@ Getting started:
   - decide which steps of the code you want to run. in the text file, look at those options starting with D). You have four steps to this code- log-rebin the data, voronoi bin the data, measure the kinematics, and plot the kinematics. To run each step, choose 'y' (for yes), and to skip it, use 'n' (for no).
   - in the terminal window, open IDL by typing >  idl
   - once IDL has started, run the code (from the directory you kinematics_input.txt file is in) >  measure_kinematics,'kinematics_input.txt'
+
+
+What are the files:
+  - measure_kinematics.pro => this is the code to run
+  - kinematics_input.txt => this is the input file, where you can set up the directories and parameters. if you decide to run the code multiple times, for example to see the effect on the kinematics measurements with the data binned to higher/lower S/N, make a new version of this file so you can keep trask and rerun an earlier one if you want.
+  - read_input.pro => this is a small code that's called by measure_kinematics to read in the input file. You shouldn't need to touch this.
+  - MILES_models
